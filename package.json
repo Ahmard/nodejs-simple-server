@@ -1,0 +1,28 @@
+{
+  "name": "simple-server",
+  "version": "1.0.0",
+  "description": "TEst",
+  "main": "server.js",
+  "dependencies": {
+    "sqlite": "^4.0.14",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ahmard/nodejs-simple-server.git"
+  },
+  "keywords": [
+    "server"
+  ],
+  "author": "ahmard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Ahmard/nodejs-simple-server/issues"
+  },
+  "homepage": "https://github.com/Ahmard/nodejs-simple-server#readme"
+}
