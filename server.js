@@ -3,9 +3,7 @@ const Route = require('./routes.js');
 
 const CONTROLLER_PATH = './app/Http/Controllers/';
 
-const fs = require('fs');
-
-const ROOT_DIR = fs.realpathSync('./') + '/';
+const PORT = 1333;
 
 http.createServer(function (request, response) {
     let routes = Route.getRoutes()[request.method.toLowerCase()];
@@ -38,4 +36,6 @@ http.createServer(function (request, response) {
 
     response.writeHead(404);
     response.end(http.STATUS_CODES[404]);
-}).listen(1333);
+}).listen(PORT);
+
+console.log("\n [*] Server running on http://localhost:" + PORT);
